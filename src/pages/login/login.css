@@ -1,7 +1,6 @@
-*{
-    background-color: bisque;
-}
+
 .login{
+    background-color: black;
     height: 100vh;
     display: flex;
     align-items: center;

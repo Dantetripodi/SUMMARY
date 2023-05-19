@@ -1,17 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import { BrowserRouter,Route,Routes } from 'react-router-dom' 
-// import Login from './pages/login/Login.jsx'
+ import { BrowserRouter,Route,Routes } from 'react-router-dom' 
+ import Login from './pages/login/Login.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-      <React.StrictMode>
+    <React.StrictMode>
       <Routes>
-        <Route></Route>
-      <App />
+      <Route path="login" element={<Login/>} />
       </Routes>
-    </React.StrictMode>
+      <App />
+   </React.StrictMode>
    </BrowserRouter>
-   
+ 
 )

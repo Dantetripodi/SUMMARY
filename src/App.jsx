@@ -1,13 +1,16 @@
 import { useState  } from 'react'
-import './App.css'
-import Login from './pages/login/Login.jsx'
+import './index.css'
+ 
 
 
 const App = () => {
-const [log,setLog]=useState(false)
+// const [log,setLog]=useState(false)
 
   const [text ,setText]= useState(null)
   // const [ message ,setMessage]=useState(null);
+
+  ;
+
 
   async function requestApi() {
      const options = {
@@ -31,8 +34,9 @@ const [log,setLog]=useState(false)
  
  return (
   <>
-   {!log && <Login setLog={setLog} />} 
-   {log && 
+   {/* {!log && <Login setLog={setLog} />}  */}
+   {/* {log &&  */}
+  
     <div className='app'>
         <section className='side-bar'>
         <button>+ Nuevo Resumen</button>
@@ -62,8 +66,9 @@ const [log,setLog]=useState(false)
          </div>
         </section>
       </div>
-    }
-      </>
+    {/* } */}
+    
+     </>
    
   )
 }
